@@ -1,0 +1,19 @@
+<view class="home">
+  <block wx:if="{{state === 'active'}}">
+    <view class="home__day">{{dayCount}}</view>
+    <view class="home__unit">天</view>
+    <view class="home__hint">从 {{loveStartDate}} 起，在一起的每一天</view>
+  </block>
+
+  <block wx:elif="{{state === 'invalid'}}">
+    <view class="home__title">日期需调整</view>
+    <view class="home__desc">开始日期无效或晚于今天，请在设置中重新选择。</view>
+    <button class="home__btn" bindtap="goSettings">去设置</button>
+  </block>
+
+  <block wx:else>
+    <view class="home__title">恋爱日记</view>
+    <view class="home__desc">设置恋爱开始日期后，这里会显示你们在一起的天数。</view>
+    <button class="home__btn" bindtap="goSettings">去设置</button>
+  </block>
+</view>

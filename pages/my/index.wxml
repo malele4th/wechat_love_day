@@ -1,0 +1,9 @@
+<t-toast id="t-toast" />
+
+<view class="settings">
+  <t-cell-group theme="card">
+    <picker mode="date" value="{{pickerValue}}" start="1950-01-01" end="{{endDate}}" bindchange="onDateChange">
+      <t-cell title="恋爱开始日期" note="{{displayNote}}" arrow hover />
+    </picker>
+  </t-cell-group>
+</view>
