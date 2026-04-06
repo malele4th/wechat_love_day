@@ -1,5 +1,5 @@
 {
-  "name": "tdesign-miniprogram-starter",
+  "name": "wechat-love-day",
   "version": "0.0.2",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,9 @@
     "lint:fix-eslint": "eslint --ext .js,.ts ./ --max-warnings 0 --ignore-path .gitignore --ignore-path .eslintignore --fix",
     "lint:fix-prettier": "prettier ./ --ignore-path .gitignore --ignore-path .eslintignore --ignore-path .prettierignore --write './**/*.{js,ts}' --ignore-unknown"
   },
-  "keywords": [
-    "wechat",
-    "miniprogram",
-    "starter"
-  ],
-  "author": "leejim",
+  "keywords": ["wechat", "miniprogram", "love-diary"],
   "license": "MIT",
-  "description": "a start-kit for wechat miniprogram powerby TDesign miniprogram",
+  "description": "恋爱日记 — 本地记录恋爱开始日并展示在一起的天数（微信小程序）",
   "dependencies": {
     "tdesign-miniprogram": "^1.11.2"
   },
