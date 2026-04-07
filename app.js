@@ -1,4 +1,11 @@
 // app.js — 恋爱日记
+if (wx.cloud) {
+  wx.cloud.init({
+    env: 'cloud1-1gloox32c1e33216',
+    traceUser: true,
+  });
+}
+
 App({
   onLaunch() {
     const updateManager = wx.getUpdateManager();
